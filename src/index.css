@@ -7,14 +7,23 @@ body {
   color: white;
 }
 
-nav {
+.container-fluid {
+  width: inherit !important;
+}
+
+/***************/
+/***** NAV *****/
+/***************/
+
+.portfolio-nav {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   padding: 1.1rem 5rem;
   background-color: #2d2e32;
-  color: white;
+}
+
+.portfolio-nav-row {
+  padding: 0 5rem;
+  width: 100%;
 }
 
 .portfolio-nav-logo {
@@ -26,32 +35,23 @@ nav {
 }
 
 .portfolio-nav-skills {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
   text-align: right;
 }
 
-ul {
+nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-li {
+nav li {
   list-style-type: none;
   margin-left: 2rem;
   font-size: .9rem;
   white-space: nowrap;
 }
 
-
-
-
-
-
-
-button {
+nav button {
   border: none;
   border-radius: .2rem;
   padding: .5rem 1rem;
@@ -62,44 +62,13 @@ button {
   margin: .5rem;
 }
 
-
-.portfolio-card:hover {
-  /* border: 3px solid #4dba87; */
-  background-image: linear-gradient(to right, #2d2e32 , 85%, #4dba87);
-  cursor: pointer;
-}
-
-.portfolio-card:hover svg {
-  stroke: white;
-}
-
-
-
-
-
+/*********************/
+/***** PORTFOLIO *****/
+/*********************/
 
 .portfolio {
   padding: 5rem;
 }
-
-.portfolio-nav-row {
-  padding: 0 5rem;
-  width: 100%;
-}
-
-/* .portfolio-left {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  flex-wrap: wrap;
-}
-
-.portfolio-right {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  flex-wrap: wrap;
-} */
 
 .portfolio-panel {
   display: flex;
@@ -112,11 +81,25 @@ button {
   padding: 2rem;
   border-radius: .5rem;
   margin-top: .5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.portfolio-card:hover {
+  background-image: linear-gradient(to right, #2d2e32 , 85%, #4dba87);
+}
+
+.portfolio-card svg {
+  align-self: center;
+  stroke: #4dba87;
+}
+
+.portfolio-card:hover svg {
+  stroke: white;
 }
 
 .portfolio-card-header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -129,97 +112,44 @@ button {
 
 .portfolio-card-description {
   font-size: .8rem;
-  font-weight: 500;
   margin-bottom: 1rem;
 }
 
-.portfolio-card-link {
+.portfolio-card-lang {
   color: #777;
   text-decoration: underline;
   font-size: .8rem;
   text-transform: uppercase;
 }
 
-.portfolio-project-info {
+.portfolio-bio {
   padding: 2rem;
 }
 
-
-
-
-
-.item-head {
+.portfolio-bio-head {
   color: #777;
-
 }
 
-.item-title {
-  margin-top: 1rem;
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.item-subtitle {
+.portfolio-bio-subtitle {
   font-style: italic;
   font-size: 1.5rem;
   font-weight: 100;
-  margin-bottom: 1rem;
 }
 
-.item-description {
-  font-size: 1rem;
+.portfolio-bio-description {
   color: #777;
   line-height: 2rem;
   text-align: justify;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.green {
-  color: #4dba87;
-}
-
-
-
-
-.container-fluid {
-  width: inherit !important;
-}
-
-svg {
-  stroke: #4dba87;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-}
-
-
-
+/*****************/
+/***** MEDIA *****/
+/*****************/
 
 @media (max-width: 768px) {
   .portfolio-nav {
     justify-content: center;
     padding: 1rem;
-  }
-
-  .nav-links {
-    display: none;
   }
 
   .portfolio-nav-row {
@@ -230,15 +160,15 @@ nav a {
     justify-content: center;
   }
 
-  .portfolio {
-    padding: 1rem;
-  }
-
   .portfolio-nav-skills {
     text-align: center;
   }
 
   .skills {
+    padding: 1rem;
+  }
+
+  .portfolio {
     padding: 1rem;
   }
 }
