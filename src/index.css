@@ -1,13 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #25262a;
+  color: white;
 }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 5rem;
+  background-color: #2d2e32;
+  color: white;
+}
+
+.portfolio-nav-logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-nav-skills {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 2rem;
+  font-size: .9rem;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+button {
+  border: none;
+  border-radius: .2rem;
+  padding: .5rem 1rem;
+  color: #2d2e32;
+  font-size: .8rem;
+  font-weight: 600;
+  background-color: #4dba87;
+  margin: .5rem;
+}
+
+
+.portfolio-card:hover {
+  /* border: 3px solid #4dba87; */
+  background-image: linear-gradient(to right, #2d2e32 , 85%, #4dba87);
+  cursor: pointer;
+}
+
+.portfolio-card:hover svg {
+  stroke: white;
+}
+
+
+
+
+
+
+.portfolio {
+  padding: 5rem;
+}
+
+.portfolio-nav-row {
+  padding: 0 5rem;
+  width: 100%;
+}
+
+/* .portfolio-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.portfolio-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: wrap;
+} */
+
+.portfolio-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-card {
+  background-color: #2d2e32;
+  padding: 2rem;
+  border-radius: .5rem;
+  margin-top: .5rem;
+}
+
+.portfolio-card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.portfolio-card-title {
+  color: #4dba87;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: .3rem;
+}
+
+.portfolio-card-description {
+  font-size: .8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.portfolio-card-link {
+  color: #777;
+  text-decoration: underline;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+.portfolio-project-info {
+  padding: 2rem;
+}
+
+
+
+
+
+.item-head {
+  color: #777;
+
+}
+
+.item-title {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.item-subtitle {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.item-description {
+  font-size: 1rem;
+  color: #777;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.green {
+  color: #4dba87;
+}
+
+
+
+
+.container-fluid {
+  width: inherit !important;
+}
+
+svg {
+  stroke: #4dba87;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .portfolio-nav {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .portfolio-nav-row {
+    padding: 0 2rem;
+  }
+
+  .portfolio-nav-logo {
+    justify-content: center;
+  }
+
+  .portfolio {
+    padding: 1rem;
+  }
+
+  .portfolio-nav-skills {
+    text-align: center;
+  }
+
+  .skills {
+    padding: 1rem;
+  }
 }
