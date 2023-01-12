@@ -33,7 +33,7 @@ class Portfolio extends React.Component {
             title: "Website",
             desc: "You're looking at it! This site was built from scratch with HTML, CSS and JavaScript.",
             lang: "React",
-            url: "http://localhost:3000/",
+            url: "http://hexxzn.github.io/",
             icon:   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sitemap" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <rect x="3" y="15" width="6" height="6" rx="2"></rect>
