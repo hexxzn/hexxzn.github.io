@@ -69,7 +69,10 @@ class Portfolio extends React.Component {
                             <h3 className="portfolio-bio-subtitle">Software and Web Developer</h3>
                             <p className="portfolio-bio-description">
                                 I'm currently a full-time student at Cleveland State University working towards my Bachelor 
-                                of Science degree in Computer Science. While you're here, check out some of my projects!
+                                of Science degree in Computer Science.
+                                <br />
+                                <br />
+                                While you're here, check out some of my projects!
                             </p>
                         </div>
                     </div>

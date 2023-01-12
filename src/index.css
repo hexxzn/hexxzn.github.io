@@ -97,6 +97,7 @@ nav li {
   margin-top: .5rem;
   color: white;
   text-decoration: none;
+  /* border-left: 3px solid #4dba87; */
 }
 
 .portfolio-card:hover {
