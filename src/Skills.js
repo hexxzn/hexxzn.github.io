@@ -13,12 +13,12 @@ class Skills extends React.Component {
     ]
 
     listSkills = this.skills.map((skill) =>
-            <button>{skill}</button>
+            <div className="skill">{skill}</div>
     );
     
     render() {
         return (
-            <div className="skills">
+            <div className="skills col-md">
                 {this.listSkills}
             </div>
         );

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+/****************/
+/***** MISC *****/
+/****************/
+
 body {
   margin: 0;
   font-family: 'Roboto Mono', monospace;
@@ -22,6 +26,8 @@ body {
 }
 
 .portfolio-nav-row {
+  display: flex;
+  flex-direction: row;
   padding: 0 5rem;
   width: 100%;
 }
@@ -36,6 +42,8 @@ body {
 
 .portfolio-nav-skills {
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 nav ul {
@@ -51,7 +59,13 @@ nav li {
   white-space: nowrap;
 }
 
-nav button {
+.skills {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.skill {
   border: none;
   border-radius: .2rem;
   padding: .5rem 1rem;
@@ -166,6 +180,7 @@ nav button {
 
   .skills {
     padding: 1rem;
+    justify-content: center;
   }
 
   .portfolio {

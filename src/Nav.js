@@ -11,9 +11,7 @@ class Nav extends React.Component {
                         <div>George Kilburg</div>
                         {/* <button>George Kilburg</button> */}
                     </div>
-                    <div className="portfolio-nav-skills col-md">
-                        {<Skills />}
-                    </div>
+                    {<Skills />}
                 </div>
             </nav>
         );
