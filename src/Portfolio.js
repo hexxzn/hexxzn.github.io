@@ -9,11 +9,12 @@ class Portfolio extends React.Component {
             desc: "A Discord bot that makes it easy to stream music directly to your Discord server.",
             lang: "Python",
             url: "https://github.com/hexxzn/tempo",
-            icon:   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-headphones" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            icon:   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-music" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <rect x="4" y="13" rx="2" width="5" height="7"></rect>
-                        <rect x="15" y="13" rx="2" width="5" height="7"></rect>
-                        <path d="M4 15v-3a8 8 0 0 1 16 0v3"></path>
+                        <circle cx="6" cy="17" r="3"></circle>
+                        <circle cx="16" cy="17" r="3"></circle>
+                        <polyline points="9 17 9 4 19 4 19 17"></polyline>
+                        <line x1="9" y1="8" x2="19" y2="8"></line>
                     </svg>
         },
         {
