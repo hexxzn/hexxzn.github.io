@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Bio from './Bio'
 
 class Portfolio extends React.Component {
     about = [
@@ -63,18 +64,7 @@ class Portfolio extends React.Component {
                         {this.listAbout}
                     </div>
                     <div className="portfolio-panel col-md">
-                        <div className="portfolio-bio">
-                            <h5 className="portfolio-bio-head">Introduction</h5>
-                            <h1 className="portfolio-bio-title">Hello, I'm George Kilburg.</h1>
-                            <h3 className="portfolio-bio-subtitle">Software and Web Developer</h3>
-                            <p className="portfolio-bio-description">
-                                I'm currently a full-time student at Cleveland State University working towards my Bachelor 
-                                of Science degree in Computer Science.
-                                <br />
-                                <br />
-                                While you're here, check out some of my projects!
-                            </p>
-                        </div>
+                        {<Bio />}
                     </div>
                 </div>
             </div>
