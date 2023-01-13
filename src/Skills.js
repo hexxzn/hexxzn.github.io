@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 class Skills extends React.Component {
     skills = [
@@ -13,7 +12,7 @@ class Skills extends React.Component {
     ]
 
     listSkills = this.skills.map((skill) =>
-            <div className="skill">{skill}</div>
+            <div key={skill} className="skill">{skill}</div>
     );
     
     render() {
@@ -25,5 +24,4 @@ class Skills extends React.Component {
     }
 }
 
-ReactDOM.render(<Skills />, document.getElementById('root'));
 export default Skills;

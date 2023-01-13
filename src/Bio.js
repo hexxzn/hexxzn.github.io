@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 
 class Bio extends React.Component {
     bio = {
@@ -29,5 +28,4 @@ class Bio extends React.Component {
     }
 }
 
-ReactDOM.render(<Bio />, document.getElementById('root'))
 export default Bio

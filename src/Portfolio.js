@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Bio from './Bio'
 
 class Portfolio extends React.Component {
@@ -9,7 +8,7 @@ class Portfolio extends React.Component {
             desc: "A Discord bot that makes it easy to stream music directly to your Discord server.",
             lang: "Python",
             url: "https://github.com/hexxzn/tempo",
-            icon:   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-music" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            icon:   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-music" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <circle cx="6" cy="17" r="3"></circle>
                         <circle cx="16" cy="17" r="3"></circle>
@@ -22,7 +21,7 @@ class Portfolio extends React.Component {
             desc: "A resume extractor that parses Indeed resumes and outputs formatted MS Word documents.",
             lang: "Python",
             url: "https://github.com/hexxzn/rezume",
-            icon:   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-description" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            icon:   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-file-description" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
                         <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
@@ -34,8 +33,8 @@ class Portfolio extends React.Component {
             title: "Website",
             desc: "You're looking at it! This site was built from scratch with HTML, CSS and JavaScript.",
             lang: "React",
-            url: "http://hexxzn.github.io/",
-            icon:   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sitemap" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            url: "https://github.com/hexxzn/hexxzn.github.io",
+            icon:   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-sitemap" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <rect x="3" y="15" width="6" height="6" rx="2"></rect>
                         <rect x="15" y="15" width="6" height="6" rx="2"></rect>
@@ -47,7 +46,7 @@ class Portfolio extends React.Component {
     ]
 
     listAbout = this.about.map((item) =>
-        <a href={item.url} className="portfolio-card">
+        <a key={item.title} href={item.url} className="portfolio-card">
             <div className="portfolio-card-header">
                 <div className="portfolio-card-title">{item.title}</div>
                 {item.icon}
@@ -73,5 +72,4 @@ class Portfolio extends React.Component {
     }
 }
 
-ReactDOM.render(<Portfolio />, document.getElementById('root'));
 export default Portfolio;

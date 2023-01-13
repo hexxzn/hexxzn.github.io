@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Skills from './Skills';
 
 class Nav extends React.Component {
@@ -17,7 +16,5 @@ class Nav extends React.Component {
         );
     }
 }
-
-ReactDOM.render(<Nav />, document.getElementById('root'))
 
 export default Nav;
