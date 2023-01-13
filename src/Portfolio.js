@@ -60,10 +60,10 @@ class Portfolio extends React.Component {
         return (
             <div className="container-fluid">
                 <div className="portfolio row">
-                    <div className="portfolio-panel col-md">
+                    <div className="portfolio-panel col-md order-last order-md-first">
                         {this.listAbout}
                     </div>
-                    <div className="portfolio-panel col-md">
+                    <div className="portfolio-panel col-md order-first order-md-last">
                         {<Bio />}
                     </div>
                 </div>

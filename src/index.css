@@ -85,7 +85,7 @@ nav li {
 /*********************/
 
 .portfolio {
-  padding: 5rem;
+  padding: 5rem 5rem 0 5rem;
 }
 
 .portfolio-panel {
@@ -163,6 +163,32 @@ nav li {
 }
 
 /*****************/
+/***** TEMPO *****/
+/*****************/
+
+.project {
+  padding: 5rem 5rem 0 5rem;
+}
+
+.project-card {
+  background-color: #2d2e32;
+  border-radius: .5rem;
+  padding: 2rem
+}
+
+.project-card-title {
+  color: #4dba87;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: .3rem;
+}
+
+.project-card-description {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+
+/*****************/
 /***** MEDIA *****/
 /*****************/
 
@@ -193,3 +219,4 @@ nav li {
     padding: 1rem;
   }
 }
+
