@@ -17,6 +17,11 @@ body {
   width: inherit !important;
 }
 
+.green {
+  color: #4dba87;
+  font-weight: 600;
+}
+
 /***************/
 /***** NAV *****/
 /***************/
@@ -166,26 +171,97 @@ nav li {
 /***** TEMPO *****/
 /*****************/
 
-.project {
+.tempo {
   padding: 5rem 5rem 0 5rem;
 }
 
-.project-card {
+.tempo-card {
   background-color: #2d2e32;
   border-radius: .5rem;
-  padding: 2rem
+  padding: 1rem;
+  margin-bottom: .5rem;
 }
 
-.project-card-title {
+.tempo-tabs-card {
+  background-color: #2d2e32;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+.tempo-tabs {
+  margin-bottom: -1rem;
+}
+
+.tempo-tabs a {
+  border: none;
+  border-radius: .2rem;
+  padding: .5rem 1rem;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tempo-tab {
+  margin-bottom: 1rem;
+  background-color: #2d2e32;
+}
+
+.tempo-tab:hover {
+  background-color: #4dba87;
+  cursor: pointer;
+}
+
+.tempo-tab-green:hover {
+  cursor: pointer;
+}
+
+.tempo-tab-green {
+  margin-bottom: 1rem;
+  background-color: #4dba87;
+}
+
+.tempo-title {
   color: #4dba87;
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: .3rem;
 }
 
 .project-card-description {
   font-size: .8rem;
   margin-bottom: 1rem;
+}
+
+.project-card-subtitle {
+  margin-bottom: 0.3rem;
+}
+
+.tempo-command-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.tempo-command-card {
+  background-color: #25262a;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+.tempo-command-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color:#4dba87;
+  margin-bottom: 1rem;
+}
+
+.tempo-command-description {
+  margin-bottom: 1rem;
+}
+
+.tempo-command-aliases {
+  color: #777;
 }
 
 /*****************/
@@ -217,6 +293,39 @@ nav li {
 
   .portfolio {
     padding: 1rem;
+  }
+  
+  .project {
+    padding: 1rem;
+  }
+  
+  .portfolio-bio-description {
+    text-align: left;
+  }
+
+  .tempo {
+    padding: 1rem;
+  }
+
+  .tempo-tabs-card {
+    margin-bottom: .5rem;
+  }
+
+  .tempo-tabs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: -1rem;
+    margin-right: -1rem;
+  }
+
+  .tempo-tabs a {
+    flex-grow: 1;
+  }
+
+  .tempo-tab, .tempo-tab-green {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
   }
 }
 
