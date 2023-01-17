@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import '../node_modules/bootstrap/dist/css/bootstrap-grid.css';
-import Portfolio from './Portfolio';
+// import Portfolio from './Portfolio';
 import Tempo from './Tempo';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Portfolio />
+    {/* <Portfolio /> */}
     <Tempo />
   </React.StrictMode>
 );

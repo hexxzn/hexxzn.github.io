@@ -4,7 +4,7 @@ class TempoCommands extends React.Component {
     commands = [
         {
             name: "help",
-            description: (<span>Get a list of all available commands. Use <span className="green">!help &lt;command name&gt;</span> for information on individual commands.</span>),
+            description: (<span>Get a list of all available commands. You can also use <span className="green">!help &lt;command name&gt;</span> for information on an individual command.</span>),
             aliases: "h"
         },
         {
@@ -49,7 +49,7 @@ class TempoCommands extends React.Component {
         },
         {
             name: "volume",
-            description: "Change audio playback volume by adjusting Tempo's input volume. This does not affect the \"User Volume\" slider set by individual server members.",
+            description: "Change serverwide audio playback volume by adjusting Tempo's input volume. (Admin only)",
             aliases: "v"
         },
         {
@@ -64,7 +64,7 @@ class TempoCommands extends React.Component {
         },
         {
             name: "repeat",
-            description: "Turn repeat (current song) on or off.",
+            description: "Turn repeat on or off.",
             aliases: "rp"
         },
         {

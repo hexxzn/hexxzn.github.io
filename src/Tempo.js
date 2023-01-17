@@ -1,5 +1,6 @@
 import React from 'react';
-import TempoCommands from './TempoCommands';
+// import TempoCommands from './TempoCommands';
+import TempoSummary from './TempoSummary';
 
 class Tempo extends React.Component {
     render() {
@@ -7,17 +8,25 @@ class Tempo extends React.Component {
             <div className="container-fluid">
                 <div className="tempo row">
                     <div className="col-lg-3 col-md-4">
+                        <div className="tempo-tabs-card tempo-home">
+                            <div className="tempo-nav">
+                                <div className="tempo-tabs">
+                                    <a className="tempo-tab">&larr; Home</a>
+                                </div>
+                            </div>
+                        </div>
                         <div className="tempo-tabs-card">
                             <div className="tempo-nav">
                                 <div className="tempo-tabs">
-                                    <div className="tempo-tab">Tempo</div>
-                                    <div className="tempo-tab-green">Commands</div>
-                                    <div className="tempo-tab">Links</div>
+                                    <a className="tempo-tab tempo-tab-green">Tempo</a>
+                                    <a className="tempo-tab">Commands</a>
+                                    <a className="tempo-tab">Links</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <TempoCommands />
+                    <TempoSummary />
+                    {/* <TempoCommands /> */}
                 </div>
             </div>
         );

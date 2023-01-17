@@ -182,17 +182,47 @@ nav li {
   margin-bottom: .5rem;
 }
 
+.tempo-card img {
+  border-radius: .5rem;
+  height: auto;
+  width: auto;
+  object-fit: cover;
+}
+
+.tempo-summary-left {
+  margin-right: .5rem;
+}
+
+.tempo-summary-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #4dba87;
+}
+
+.tempo-summary-text {
+  font-size: .8rem;
+  /* background-color: #25262a; */
+  border-radius: .5rem;
+  width: 100%;
+  padding: 2rem;
+}
+
 .tempo-tabs-card {
   background-color: #2d2e32;
   border-radius: .5rem;
   padding: 1rem;
 }
 
+.tempo-home {
+  margin-bottom: 1rem;
+}
+
 .tempo-tabs {
   margin-bottom: -1rem;
 }
 
-.tempo-tabs div {
+.tempo-tabs a {
   border: none;
   border-radius: .2rem;
   padding: .5rem 1rem;
@@ -206,7 +236,7 @@ nav li {
 
 .tempo-tab {
   margin-bottom: 1rem;
-  background-color: #2d2e32;
+  background-color: #777;
 }
 
 .tempo-tab:hover {
@@ -227,6 +257,28 @@ nav li {
   color: #4dba87;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.tempo-summary {
+  display: flex;
+  flex-direction: row;
+}
+
+.tempo-summary-1 {
+  display: flex;
+  flex-direction: row;
+  margin-right: 1rem;
+  background-color: #25262a;
+  border-radius: .5rem;
+  line-height: 1.5rem;
+}
+
+.tempo-summary-2 {
+  display: flex;
+  flex-direction: row;
+  background-color: #25262a;
+  border-radius: .5rem;
+  line-height: 1.5rem;
 }
 
 .project-card-description {
