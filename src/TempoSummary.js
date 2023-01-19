@@ -26,7 +26,7 @@ class TempoSummary extends React.Component {
                         <div className="tempo-summary-1">
                             {/* <img className="tempo-summary-left" src="/tempoSummary.png" alt="Tempo Commands" /> */}
                             <div className="tempo-summary-text">
-                                <div className="tempo-summary-title">Tempo</div>
+                                <div className="tempo-summary-title">Summary</div>
                                 <p>Tempo is a Discord bot that makes it easy to stream music directly to your Discord server.</p>
                                 <p>Simply connect to a voice channel and type a command in any text channel visible to Tempo.</p>
                             </div>
